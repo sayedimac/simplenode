@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.footer {
+  margin-top: 3rem;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+code {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+  color: #d63384;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.text-muted.small {
+  margin-bottom: 0;
+  font-size: 0.75rem;
+}
+
+#server-time {
+  font-family: monospace;
+}

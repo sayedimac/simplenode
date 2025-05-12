@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  div.jumbotron.bg-light.p-5.rounded-3
+    h1.display-4= title
+    p.lead Welcome to your Node.js Express app on Azure App Service
+    hr.my-4
+    p This application is ready for deployment to Azure App Service with Node.js 20.
+
+  div.row.mt-5
+    div.col-md-6
+      div.card.shadow
+        div.card-header.bg-primary.text-white
+          h4.mb-0 Environment Variables
+        div.card-body
+          table.table.table-hover
+            thead.table-light
+              tr
+                th Variable
+                th Value
+            tbody
+              tr
+                td 
+                  strong Colour
+                  p.text-muted.small The application theme color
+                td
+                  span.badge.bg-info.text-dark= colour
+              tr
+                td 
+                  strong Site
+                  p.text-muted.small The current environment
+                td
+                  span.badge.bg-success= site
+              tr
+                td 
+                  strong Database Connection
+                  p.text-muted.small Database connection string
+                td
+                  code= dbconn
+              tr
+                td 
+                  strong Authentication
+                  p.text-muted.small Auth endpoint
+                td
+                  code= auth
+    
